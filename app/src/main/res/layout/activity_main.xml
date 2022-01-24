@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/toolbarLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar_background"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnRed"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/red_colour" />
+
+        <ImageButton
+            android:id="@+id/btnYellow"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/yellow_colour" />
+
+        <ImageButton
+            android:id="@+id/btnGreen"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/green_colour" />
+
+        <ImageButton
+            android:id="@+id/btnBlack"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/black_colour" />
+
+        <ImageButton
+            android:id="@+id/btnEraser"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/white_colour" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarLine">
+
+        <include layout="@layout/drawing_view" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
